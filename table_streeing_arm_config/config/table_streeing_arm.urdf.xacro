@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="table_streeing_arm">
+    <xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
+
+    <!-- Import table_streeing_arm urdf file -->
+    <xacro:include filename="$(find table_streeing_arm)/urdf/table_streeing_arm.urdf" />
+
+    <!-- Import control_xacro -->
+    <xacro:include filename="table_streeing_arm.ros2_control.xacro" />
+
+
+    <xacro:table_streeing_arm_ros2_control name="FakeSystem" initial_positions_file="$(arg initial_positions_file)"/>
+
+</robot>

@@ -1,0 +1,29 @@
+[INFO] [launch]: All log files can be found below /home/axe/.ros/log/2025-06-27-15-41-51-353814-ubuntu-337699
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [move_to_target-1]: process started with pid [337700]
+[move_to_target-1] [INFO] [1751010111.696256547] [move_to_target]: Waiting for move_group node...
+[move_to_target-1] [INFO] [1751010112.196777056] [move_to_target]: Checking for required parameters...
+[move_to_target-1] [INFO] [1751010112.205248115] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0.00785722 seconds
+[move_to_target-1] [INFO] [1751010112.206539224] [moveit_robot_model.robot_model]: Loading robot model 'table_streeing_arm'...
+[move_to_target-1] [INFO] [1751010112.206578425] [moveit_robot_model.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[move_to_target-1] [WARN] [1751010112.401540499] [moveit_ros.robot_model_loader]: No kinematics plugins defined. Fill and load kinematics.yaml!
+[move_to_target-1] [INFO] [1751010112.433731055] [move_group_interface]: Ready to take commands for planning group arm_group.
+[move_to_target-1] [INFO] [1751010112.433812753] [move_to_target]: Waiting for current robot state...
+[move_to_target-1] [INFO] [1751010114.435771199] [moveit_ros.current_state_monitor]: Listening to joint states on topic 'joint_states'
+[move_to_target-1] [INFO] [1751010114.692688390] [move_to_target]: Current pose: x=0.042, y=0.009, z=0.341
+[move_to_target-1] [INFO] [1751010114.692840042] [move_to_target]: Moving to target position 1:
+[move_to_target-1] [INFO] [1751010114.692870251] [move_to_target]:   Target: x=0.012, y=0.009, z=0.321
+[move_to_target-1] [INFO] [1751010114.693120050] [move_group_interface]: MoveGroup action client/server ready
+[move_to_target-1] [INFO] [1751010114.699060284] [move_group_interface]: Planning request accepted
+[move_to_target-1] [INFO] [1751010129.728623604] [move_group_interface]: Planning request aborted
+[move_to_target-1] [ERROR] [1751010129.729305863] [move_group_interface]: MoveGroupInterface::plan() failed or timeout reached
+[move_to_target-1] [ERROR] [1751010129.729392458] [move_to_target]: Planning failed for target position 1
+[move_to_target-1] [INFO] [1751010132.729574395] [move_to_target]: Moving to target position 2:
+[move_to_target-1] [INFO] [1751010132.729724928] [move_to_target]:   Target: x=0.042, y=-0.021, z=0.341
+[move_to_target-1] [INFO] [1751010132.730088746] [move_group_interface]: MoveGroup action client/server ready
+[move_to_target-1] [INFO] [1751010132.733106272] [move_group_interface]: Planning request accepted
+[move_to_target-1] [INFO] [1751010147.772936985] [move_group_interface]: Planning request aborted
+[move_to_target-1] [ERROR] [1751010147.773471241] [move_group_interface]: MoveGroupInterface::plan() failed or timeout reached
+[move_to_target-1] [ERROR] [1751010147.773560651] [move_to_target]: Planning failed for target position 2
+[move_to_target-1] [INFO] [1751010150.773751284] [move_to_target]: Movement sequence completed!
+[INFO] [move_to_target-1]: process has finished cleanly [pid 337700]

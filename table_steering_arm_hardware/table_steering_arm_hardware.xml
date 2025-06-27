@@ -1,0 +1,9 @@
+<library path="table_steering_arm_hardware">
+  <class name="table_steering_arm_hardware/TableSteeringArmHardware"
+         type="table_steering_arm_hardware::TableSteeringArmHardware"
+         base_class_type="hardware_interface::SystemInterface">
+    <description>
+      Hardware interface for Table Steering Arm A150 C06B robot using serial communication
+    </description>
+  </class>
+</library> 

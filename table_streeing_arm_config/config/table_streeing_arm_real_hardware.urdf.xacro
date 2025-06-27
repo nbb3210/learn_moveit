@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="table_streeing_arm">
+    <xacro:arg name="serial_port" default="/dev/wheeltec_controller" />
+    <xacro:arg name="baudrate" default="115200" />
+
+    <!-- Import table_streeing_arm urdf file -->
+    <xacro:include filename="$(find table_streeing_arm)/urdf/table_streeing_arm.urdf" />
+
+    <!-- Import real hardware control_xacro -->
+    <xacro:include filename="table_streeing_arm_real_hardware.ros2_control.xacro" />
+
+    <!-- Use real hardware interface -->
+    <xacro:table_streeing_arm_real_hardware_ros2_control 
+        name="TableSteeringArmHardware" 
+        serial_port="$(arg serial_port)" 
+        baudrate="$(arg baudrate)"/>
+
+</robot> 

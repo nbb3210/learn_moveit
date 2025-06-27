@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: table_streeing_arm
+    relative_path: urdf/table_streeing_arm.urdf
+  srdf:
+    relative_path: config/table_streeing_arm.srdf
+  package_settings:
+    author_name: xq
+    author_email: xq@spiderrobot.com
+    generated_timestamp: 1750768176
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
